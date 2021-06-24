@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	border:0;	
+	font-family: 'Roboto', sans-serif,Arial;
+	text-align:justify;
+}
+
+html,body{height: 100vh;}
+
+body{
+	background-color:#fff;
+	background-image:url("../images/background-circles.png");
+	background-size:content;
+	background-repeat:repeat;
+}
+.guloseimas{
+	width:40%;
+}
+#enviar{
+	text-align: center;
+}
+
+@media only screen and (max-width:480px){
+	form,#text{
+		background:rgb(246,246,250);
+		width: calc(8.33%*11);
+		margin: 3vw auto;
+		padding:30px;
+		padding-bottom:70px;
+	}
+
+	form h1{
+		font-size:1.4em;
+		text-transform:uppercase;
+		
+
+	}
+
+	#text h1{
+		font-size:1.3em;
+		margin-bottom:30px;
+	}
+	#text p{
+		padding-top:10px;
+	}
+	label{
+		text-transform:capitalize;
+		font-size:1.4em;
+		display:block;
+		padding-top:30px;
+		padding-bottom:20px;
+		
+	}
+	.input{
+		border:1px solid #eee;
+		height:40px;
+		font-size:1em;
+		padding-left:20px;
+	
+	}
+
+	#enviar{
+		margin-top:25px;
+		margin-bottom:20px;
+		margin-right:5%;
+		font-size:1.4em;
+		float:right;
+		background-color:#ff3;
+		padding:5px;
+		border-radius:3px;
+		width:90%;
+		text-transform:uppercase;
+	}
+
+	#enviar:hover{
+		background-color:#ff0;
+		color:#fff;
+		padding:10px;
+		border:1px solid #000;
+	}
+
+	footer{
+		background-color:#777;
+		color:#fff;
+		text-align:center;
+
+	}
+}
+
+@media only screen and (max-width:768px){
+
+	form,#text{
+		background:rgb(246,246,250);
+		width: calc(8.33%*11);
+		margin: 3vw auto;
+		padding:30px;
+		padding-bottom:70px;
+	}
+
+	form h1{
+		font-size:1.4em;
+		text-transform:uppercase;
+		
+
+	}
+
+	#text h1{
+		font-size:1.3em;
+		margin-bottom:30px;
+	}
+	#text p{
+		padding-top:10px;
+	}
+	label{
+		text-transform:capitalize;
+		font-size:1.4em;
+		display:block;
+		padding-top:30px;
+		padding-bottom:20px;
+		
+	}
+	.input{
+		border:1px solid #eee;
+		height:40px;
+		font-size:1em;
+		padding-left:20px;
+	}
+
+	#enviar{
+		margin-top:25px;
+		margin-bottom:20px;
+		margin-right:5%;
+		font-size:1.4em;
+		float:right;
+		background-color:#ff3;
+		padding:5px;
+		border-radius:3px;
+		width:90%;
+		text-transform:uppercase;
+	}
+
+	#enviar:hover{
+		background-color:#ff0;
+		color:#fff;
+		padding:10px;
+		border:1px solid #000;
+	}
+
+	footer{
+		background-color:#777;
+		color:#fff;
+		text-align:center;
+
+	}
+	
+/*   animações  */
+
+
+
+	.input{
+		animation-name: labels;
+		animation-duration: 2s;
+		animation-fill-mode:forwards;
+	}
+
+	@keyframes labels{
+		from{
+			background-color: #66f;
+			width:0%;
+		}
+		to{
+			background-color:#fff;
+			width:100%;
+		}
+	}
+
+/*  animações   */
+
+}
+@media only screen and (min-width:768px){
+	
+	form,#text{
+		background:rgb(246,246,250);
+		width: 40%;
+		margin-top: 3vw;
+		padding:30px;
+		padding-bottom:70px;
+		display:inline-block;	
+		height:800px;
+		margin-bottom:5vw;
+	}
+	form h1{
+		font-size:1.4em;
+		text-transform:uppercase;
+		
+
+	}
+
+	form{
+		float:right;
+		margin-right:5vw;
+	}
+	#text{
+		float:left;
+		margin-left:5vw;
+	}
+	#text h1{
+		font-size:1.3em;
+		margin-bottom:30px;
+	}
+	#text p{
+		padding-top:10px;
+	}
+	label{
+		text-transform:capitalize;
+		font-size:1.4em;
+		display:block;
+		padding-top:30px;
+		padding-bottom:20px;
+		
+	}
+	.input{
+		border:1px solid #eee;
+		height:40px;
+		font-size:1em;
+		padding-left:20px;
+	}
+
+	#enviar{
+		margin-top:25px;
+		margin-bottom:20px;
+		margin-right:5%;
+		font-size:1.4em;
+		float:right;
+		background-color:#ff3;
+		padding:5px;
+		border-radius:3px;
+		width:90%;
+		text-transform:uppercase;
+	}
+
+	#enviar:hover{
+		background-color:#ff0;
+		color:#fff;
+		padding:10px;
+		border:1px solid #000;
+	}
+
+	footer{
+		background-color:#777;
+		color:#fff;
+		text-align:center;
+		position: fixed;
+		height: 20px;
+		bottom:0;
+		width:100%;
+}
+	
+/*   animações  */
+
+
+
+	.input{
+		animation-name: labels;
+		animation-duration: 2s;
+		animation-fill-mode:forwards;
+	}
+
+	@keyframes labels{
+		from{
+			background-color: #66f;
+			width:0%;
+		}
+		to{
+			background-color:#fff;
+			width:100%;
+		}
+	}
+
+/*  animações   */
+
+}
